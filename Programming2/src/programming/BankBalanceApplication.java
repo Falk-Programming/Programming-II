@@ -94,7 +94,7 @@ public class BankBalanceApplication {
 		
 		//Button to update balance.
 		JButton updateButton = new JButton("Update balance");
-		updateButton.setBounds(10, 75, 75, 25);
+		updateButton.setBounds(10, 75, 90, 25);
 		basePanel.add(updateButton);
 		
 		//Button listener.
