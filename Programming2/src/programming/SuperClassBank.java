@@ -2,7 +2,7 @@ package programming;
 
 import java.util.Scanner;
 
-public class Superclassbank {
+public class SuperClassBank {
 	static String firstName;
 	static String lastName;
 	static int accountID;

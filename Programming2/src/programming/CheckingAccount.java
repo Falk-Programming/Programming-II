@@ -1,13 +1,13 @@
 package programming;
 
-public class CheckingAccount extends Superclassbank{
+public class CheckingAccount extends SuperClassBank{
 	
 	public static void main(String args[]) { //Test 
 		displayAccount();
 	}
 	public static void displayAccount() {
-		Superclassbank.accountSummary();
-		Superclassbank.getBalance();
+		SuperClassBank.accountSummary();
+		SuperClassBank.getBalance();
 	}
 	public static void processWithdrawal() {
 			balance = balance - 30;
