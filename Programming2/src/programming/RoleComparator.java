@@ -1,18 +1,19 @@
 package programming;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 
-public class RoleComparator {
+public class RoleComparator implements Comparator<StudentArrayList>{
 
-	public static int compare(Object o1, Object o2) {
-		StudentArrayList s1 = (StudentArrayList)o1;
-		StudentArrayList s2 = (StudentArrayList)o2;
-		return s1.rollno - s2.rollno;
-		
-		
-		}
-			
+		@Override
+		public int compare(StudentArrayList o1, StudentArrayList o2) {
+			return Integer.compare(o1.getRoll(), o2.getRoll());
+	}
+	
 }
+
+
+
 
 
 
