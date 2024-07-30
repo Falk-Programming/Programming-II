@@ -13,12 +13,18 @@ public class student {
 	public String getName() {
         return name;
     }
-
-    public double getGPA() {	
-        return GPA;
-    }
     public String getAddress() {
     	return address;
     }
+    public double getGPA() {	
+        return GPA;
+    }
 
-}
+    @Override
+    public String toString() {
+    	String info;
+    	info = name + " " + address + " " + GPA;
+    	return info;
+
+}}
+
