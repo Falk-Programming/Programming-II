@@ -28,16 +28,20 @@ public class BagProgram {
 		otherBag.add("John");
 		
 		//Print the size of each bag
+		System.out.print("Size of nameBag: ");
 		System.out.print(nameBag.size());
 		System.out.println();
+		System.out.print("Size of otherBag: ");
 		System.out.println(otherBag.size());
 		
 		//Merge the two bags
 		nameBag.merge(otherBag);
+		System.out.print("Contents of merged bag: ");
 		System.out.print(bagContents(nameBag));
 		
 		//Distinct bag creation
 		System.out.println();
+		System.out.print("Contents of distinct bag: ");
 		System.out.print(bagContents(nameBag.distinct()));
 		
 
