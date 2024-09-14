@@ -14,11 +14,7 @@ public class BagProgram {
 		nameBag.add("Bill");
 		nameBag.add("John");
 		nameBag.add("John");
-		nameBag.add(null);
-		nameBag.add(null);
-		nameBag.add(null);
-		nameBag.add(null);
-		nameBag.add(null);
+
 		
 		//Adds elements to otherBag
 		otherBag.add("Bill");
@@ -26,6 +22,7 @@ public class BagProgram {
 		otherBag.add("Nick");
 		otherBag.add("Henry");
 		otherBag.add("John");
+
 		
 		//Print the size of each bag
 		System.out.print("Size of nameBag: ");
@@ -48,12 +45,17 @@ public class BagProgram {
 	}
 	//Prints the contents of the bag.
 	public static String bagContents(Bag<String> bag) {
-		for(int j=0; j < 10; j++) {
-			System.out.print(bag.getName(j));
+		for(int j=0; j < 6; j++) {
+			if(bag.getName(j) == null) {
+				continue;
+			}
+			else {
+				System.out.print(bag.getName(j));
 			System.out.print(" ");
+			}
 		}
+		return "";
 		
-		return null;
 		
 	}
 }
